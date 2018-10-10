@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+div.heading{
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 60px;
+	height: 150px;
+}
+
+p.heading{
+	font-size: 32px;
+	font: bold;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+p.subHeading{
+	font-size: 24px;
+	text-align: center;
+}
+
+
+
+.listButton{
+	background-color: #fff;
+	width: 100%;
+	border: 2px solid #000;
+	border-radius: 12px;
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	font-size: 32px;
+	height: 140px;
+	margin-bottom: 70px;
+}
+
+.listButtonWhite{
+	background-color: #000;
+	width: 100%;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	font-size: 32px;
+	height: 140px;
+	margin-bottom: 70px;
+}
+
+.listButtonBlack{
+	background-color: yellow;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 12px;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	font-size: 32px;
+	height: 140px;
+	margin-bottom: 70px;
+}
+
+.listButtonYellow{
+	background-color: #000;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 12px;
+	color: yellow;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	font-size: 32px;
+	height: 140px;
+	margin-bottom: 70px;
+}
+
+.listText{
+	background-color: #fff;
+	width: 100%;
+	border: 2px solid #000;
+	border-radius: 12px;
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font-size: 32px;
+	height: 140px;
+	margin-bottom: 70px;
+}
+
+p.labelText{
+	display: inline;
+
+}
+
+div.symbol{
+	display: inline;
+}
+
+img.symbol{
+	width: 100px;
+}
