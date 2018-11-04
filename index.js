@@ -16,8 +16,12 @@ function pageInit() {
   document.querySelectorAll('[id^=vote-option-]').forEach(element => 
     element.addEventListener('click', e => handleClick(e), true));
   
-    startPageRead();
+  startPageRead();
 
+}
+
+function startPageRead() {
+  playAudio('vote-heading-audio');
 }
 
 function playAudio(audioId) {
@@ -37,10 +41,6 @@ function playNext(currentOption, totalOptions) {
     playAudio('vote-audio-' + nextOption);
     pageState.currentOption = nextOption;
   }
-}
-
-function startPageRead() {
-  playAudio('vote-heading-audio');
 }
 
 function handleStartOfAudio(e) {
@@ -98,11 +98,6 @@ function selectOption(option) {
     };
   }, 1);
 }
-
-function confirmOption() {
-  document.querySelectorAll('[id^=vote-option-]');
-}
-
 
 function getNumberOfVoteOptions() {
   return document.querySelectorAll('[id^=vote-option-]').length;
