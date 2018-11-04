@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- audio clip= 5localElection.mp3-->
-<!-- audio clip= 6lpoliticalParty.mp3-->
 <html lang="en">
+
 <head>
 	<link rel="stylesheet" href="style.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script src="index.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 
 <body>
@@ -12,52 +12,45 @@
 		<p class="heading">පළාත් පාලන මැතිවරණය 2018</p>
 		<p class="subHeading">දිස්ත්‍රික්කය: කොළඹ​</p>
 		<p class="subHeading">පක්‍ෂ ගණන: 10 | පිටුව 01</p>
+		<audio id="vote-heading-audio" src="recordings/5localElection.mp3" />
 	</div>
 
 
-		<form>
-			<button type="submit" class="listButton">
-				<p class="labelText"> ඇමරිකා එක්සත් ජනපදය</p>
-					<div class="symbol">
-						<img class="symbol" src="images/votelist/symbol1.png" alt="party symbol"/>
-					</div>
-			</button>
+	<button id="vote-option-1" type="submit" class="listButton">
+		<p class="labelText"> ඇමරිකා එක්සත් ජනපදය</p>
+		<img class="symbol" src="images/votelist/symbol1.png" alt="party symbol" />
+	</button>
+	<audio id="vote-audio-1" src="recordings/6-1politicalParty1.mp3"></audio>
+	<audio id="vote-confirm-audio-1" src="recordings/7confirmVote.mp3" preload="auto"></audio>
 
-			<button type="submit" class="listButton">
-				<p class="labelText"> එක්සත් රාජධානිය</p>
-					<div class="symbol">
-						<img class="symbol" src="images/votelist/symbol2.png" alt="party symbol"/>
-					</div>
-			</button>
+	<button id="vote-option-2" type="submit" class="listButton">
+		<p class="labelText"> එක්සත් රාජධානිය</p>
+		<img class="symbol" src="images/votelist/symbol2.png" alt="party symbol" />
+	</button>
+	<audio id="vote-audio-2" src="recordings/6-2politicalParty2.mp3"></audio>
+	<audio id="vote-confirm-audio-2" src="recordings/7confirmVote.mp3"></audio>
 
-			<button type="submit" class="listButton">
-				<p class="labelText"> ඕස්ට්රෙලියාව</p>
-					<div class="symbol">
-						<img class="symbol" src="images/votelist/symbol3.png" alt="party symbol"/>
-					</div>
-			</button>
+	<button id="vote-option-3" type="submit" class="listButton">
+		<p class="labelText"> ඕස්ට්රෙලියාව</p>
+		<img class="symbol" src="images/votelist/symbol3.png" alt="party symbol" />
+	</button>
+	<audio id="vote-audio-3" src=""></audio>
 
-			<button type="submit" class="listButton">
-				<p class="labelText"> චීන මහජන සමූහාණ්ඩුව</p>
-					<div class="symbol">
-						<img class="symbol" src="images/votelist/symbol4.png" alt="party symbol"/>
-					</div>
-			</button>
+	<button id="vote-option-4" type="submit" class="listButton">
+		<p class="labelText"> චීන මහජන සමූහාණ්ඩුව</p>
+		<img class="symbol" src="images/votelist/symbol4.png" alt="party symbol" />
+	</button>
 
-			<button type="submit" class="listButton">
-				<p class="labelText"> ජපන් රාජ්යය</p>
-					<div class="symbol">
-						<img class="symbol" src="images/votelist/symbol5.png" alt="party symbol"/>
-					</div>
-			</button>
+	<button id="vote-option-5" type="submit" class="listButton">
+		<p class="labelText"> ජපන් රාජ්යය</p>
+		<img class="symbol" src="images/votelist/symbol5.png" alt="party symbol" />
+	</button>
 
-
-
-
-		</form>
-
-
-
+	<iframe src="recordings/autoPlayTrigger.mp3" allow="autoplay" frameborder="0" style="height:0"></iframe>
+	<script>
+		window.onload = pageInit();			
+	</script>
 
 </body>
+
 </html>
